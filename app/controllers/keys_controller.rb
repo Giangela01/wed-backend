@@ -46,6 +46,6 @@ class KeysController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def key_params
-      params.require(:key).permit(:api-key)
+      params.require(:key).permit(:apiKey)
     end
 end

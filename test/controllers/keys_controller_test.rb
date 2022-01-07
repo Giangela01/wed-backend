@@ -12,7 +12,7 @@ class KeysControllerTest < ActionDispatch::IntegrationTest
 
   test "should create key" do
     assert_difference('Key.count') do
-      post keys_url, params: { key: { api-key: @key.api-key } }, as: :json
+      post keys_url, params: { key: { apiKey: @key.apiKey } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class KeysControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update key" do
-    patch key_url(@key), params: { key: { api-key: @key.api-key } }, as: :json
+    patch key_url(@key), params: { key: { apiKey: @key.apiKey } }, as: :json
     assert_response 200
   end
 

@@ -1,7 +1,7 @@
 class CreateKeys < ActiveRecord::Migration[6.1]
   def change
     create_table :keys do |t|
-      t.string :api-key
+      t.string :apiKey
 
       t.timestamps
     end
